@@ -6,6 +6,8 @@ public class Radio {
     int volume;
 
     public void setCurrentStation(int Station) {
+        if (Station > 9 || Station < 0)
+            return;
         currentStation = Station;
     }
 
